@@ -17,10 +17,10 @@ const Navbar = () => {
   return (
     <div className=" fixed w-full z-10 text-white">
       <div>
-        <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-emerald-400 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-b-3xl">
+        <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-[#01a7eb] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-b-3xl">
           <div className="flex flex-row items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true} duration={500}>
-              <h1 className="text-2xl font-semibold">SPCARDIO.</h1>
+              <h1 className="text-2xl font-semibold">CAP2FPS</h1>
             </Link>
           </div>
           <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
@@ -70,14 +70,7 @@ const Navbar = () => {
               Contacts
             </Link>
           </nav>
-          <div className="hidden lg:flex">
-            <RouterLink
-              to="/signin"
-              className="bg-[#05b3aa] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-sky-700 transition"
-            >
-              Login
-            </RouterLink>
-          </div>
+          
 
           <div className=" lg:hidden flex items-center">
             {menu ? (
