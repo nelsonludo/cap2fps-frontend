@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link as RouterLink } from "react-router-dom";
+
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
