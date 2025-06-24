@@ -4,7 +4,8 @@ import Services from "./Services";
 import Doctors from "./Doctors";
 import Blogs from "./Blogs";
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Navbar from "../../components/Navbar";
+
 
 const Home = () => {
   return (
@@ -71,7 +72,7 @@ const Home = () => {
     //   </div>
     // </div>
     <>
-      <Navbar></Navbar>
+      <Navbar />
       <main>
         <div id="home">
           <MainHomeHeader></MainHomeHeader>

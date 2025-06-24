@@ -2,87 +2,94 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#01a7eb] text-white mt-8 md:mt-0">
+    <div className="bg-[#01a7eb] text-white mt-8 md:mt-0">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
-        <div className=" w-full md:w-1/4">
-          <h1 className=" font-semibold text-xl pb-4">CAP2FPS</h1>
-          <p className=" text-sm">
-            Our team of dedicated doctors, each specializing in unique fields
-            such as orthopedics, cardiology, pediatrics, neurology, dermatology,
-            and more.
+        <div className="w-full md:w-1/4">
+          <h1 className="font-semibold text-xl pb-4">CAP2FPS</h1>
+          <p className="text-sm">
+            CAP2FPS est une plateforme dédiée à la gestion des consultations, la prise de rendez-vous, et la communication entre patients et enseignants dans le domaine médical.
           </p>
         </div>
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">
-            À propos de nous
+          <h1 className="font-medium text-xl pb-4 pt-5 md:pt-0">
+            Navigation
           </h1>
-          <nav className=" flex flex-col gap-2">
+          <nav className="flex flex-col gap-2">
             <Link
               to="about"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className="hover:text-hoverColor transition-all cursor-pointer"
             >
               À propos
             </Link>
             <Link
-              to="services"
+              to="admissions"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className="hover:text-hoverColor transition-all cursor-pointer"
             >
-              Nos Services
+              Admissions
             </Link>
             <Link
-              to="doctors"
+              to="contenuAcademique"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className="hover:text-hoverColor transition-all cursor-pointer"
             >
-              Nos Enseignats
+              Contenu académique
+            </Link>
+            <Link
+              to="evenements"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-hoverColor transition-all cursor-pointer"
+            >
+              Événements
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-hoverColor transition-all cursor-pointer"
+            >
+              Contact
             </Link>
           </nav>
         </div>
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Services</h1>
-          <nav className=" flex flex-col gap-2">
+          <h1 className="font-medium text-xl pb-4 pt-5 md:pt-0">Nos Services</h1>
+          <nav className="flex flex-col gap-2">
             <Link
-              to="services"
+              to="rendezvous"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className="hover:text-hoverColor transition-all cursor-pointer"
             >
-              Lab Test
+              Prise de rendez-vous
             </Link>
             <Link
-              to="services"
+              to="consultations"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className="hover:text-hoverColor transition-all cursor-pointer"
             >
-              Health Check
-            </Link>
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Heart Health
+              Consultations
             </Link>
           </nav>
         </div>
       </div>
       <div>
-        <p className=" text-center py-4">
-          Copyright © 2024 - All right reserved By
-          <span className=" text-hoverColor"> SPCARDIO</span>
+        <p className="text-center py-4">
+          Copyright © 2024 - Tous droits réservés par
+          <span className="text-hoverColor"> CAP2FPS</span>
         </p>
       </div>
     </div>
