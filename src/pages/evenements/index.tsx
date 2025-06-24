@@ -74,9 +74,9 @@ const formatDate = (dateStr: string) => {
 };
 
 const EvenementsPage: React.FC = () => {
-    const [news, setNews] = useState(initialNews);
-    const [upcomingEvents, setUpcomingEvents] = useState(initialUpcomingEvents);
-    const [pastEvents, setPastEvents] = useState(initialPastEvents);
+    const [news] = useState(initialNews);
+    const [upcomingEvents] = useState(initialUpcomingEvents);
+    const [pastEvents] = useState(initialPastEvents);
     const [selectedNews, setSelectedNews] = useState<number | null>(null);
     const [selectedEvent, setSelectedEvent] = useState<number | null>(null);
     const [search, setSearch] = useState("");
