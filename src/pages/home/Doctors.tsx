@@ -112,14 +112,14 @@ const Doctors = () => {
           </button>
         </div>
       </div>
-      <div className=" mt-5">
+      <div className="mt-5 ">
         <Slider ref={slider} {...settings}>
           {data.map((e, index) => (
             <div
-              className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
+              className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2  cursor-pointer"
               key={index}
             >
-              <div>
+              <div className="mx-2">
                 <img
                   src={e.img}
                   alt="img"

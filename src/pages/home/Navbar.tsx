@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className=" fixed w-full z-10 text-white">
       <div>
-        <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-[#01a7eb] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-b-3xl">
+        <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-[#01a7eb] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className="flex flex-row items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true} duration={500}>
               <h1 className="text-2xl font-semibold">CAP2FPS</h1>
@@ -83,7 +83,7 @@ const Navbar = () => {
         <div
           className={`${
             menu ? "translate-x-0" : "-translate-x-full"
-          } lg:hidden flex flex-col absolute bg-emerald-400 rounded-3xl text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+          } lg:hidden flex flex-col absolute bg-[#01a7ff] rounded-xl text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
           <Link
             to="home"
@@ -135,12 +135,6 @@ const Navbar = () => {
           >
             Blogs
           </Link>
-          <RouterLink
-            to="/signin"
-            className="bg-[#05b3aa] text-white px-6 py-3 rounded-3xl text-lg font-semibold hover:bg-sky-700 transition"
-          >
-            Login
-          </RouterLink>
         </div>
       </div>
     </div>
